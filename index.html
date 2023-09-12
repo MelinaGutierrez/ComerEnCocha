@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comer en Cocha</title>
+    <link rel="icon" href="./src/Logo2.png" type="image/x-icon">
+
+    <!-- Incluye los archivos CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Estilo personalizado para las tarjetas -->
+    <style>
+        .navbar {
+            background-color: #ffffff;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000000;
+            /* Texto blanco para el logo */
+        }
+
+        .navbar-logo img {
+            width: 80px;
+            /* Tamaño del logo */
+            margin-right: 10px;
+        }
+
+        .navbar-menu {
+            color: #000000;
+            /* Color del texto del menú */
+        }
+
+        .navbar-menu .nav-item {
+            margin: 0 10px;
+            /* Espaciado entre elementos del menú */
+        }
+
+        .navbar-menu .nav-link {
+            color: #000000;
+            /* Color del texto del menú */
+        }
+
+        /* Mover elementos del menú al lado derecho */
+        .navbar-menu {
+            justify-content: flex-end;
+        }
+        /* Botones de color amarillo */
+        .btn-primary {
+            background-color: #000;
+            border-color: #000;
+            color: rgb(255, 255, 255); /* Texto en negro en estado neutral */
+        }
+
+        .btn-primary:hover {
+            background-color: yellow;
+            border-color: yellow;
+            color: black; /* Texto en negro en estado de hover */
+        }
+
+        .card {
+            transition: transform 0.2s, box-shadow 0.3s;
+            border-color: #000;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-color: var(--secondary-color);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+        }
+
+        .card-text {
+            font-size: 1rem;
+        }
+
+        /* Footer con color de fondo */
+        .footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+     /* Estilo para las imágenes en estado normal */
+     .categoria img {
+        height: 150px;
+        transition: transform 0.2s; /* Agrega una transición suave al efecto de transformación */
+    }
+
+    /* Estilo para las imágenes en estado hover */
+    .categoria img:hover {
+        transform: scale(1.1); /* Escala la imagen un 10% más grande en el estado hover */
+    }
+    </style>
+</head>
+<body>
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+        <div class="navbar-logo">
+            <img src="./src/Logo.png" alt="Logo" > Comer en Cocha
+        </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="recetas.html">Recetas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="restaurantes.html">Restaurantes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Eventos</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Carrusel de imágenes -->
+<div id="imageCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#imageCarousel" data-slide-to="1"></li>
+        <li data-target="#imageCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./src/publicidad1.jpeg" class="d-block w-100" alt="Publicidad 1">
+        </div>
+        <div class="carousel-item">
+            <img src="./src/publicidad2.jpeg" class="d-block w-100" alt="Publicidad 2">
+        </div>
+        <div class="carousel-item">
+            <img src="./src/publicidad3.jpeg" class="d-block w-100" alt="Publicidad 3">
+        </div>
+        <div class="carousel-item">
+            <img src="./src/publicidad4.jpeg" class="d-block w-100" alt="Publicidad 4">
+        </div>
+        <div class="carousel-item">
+            <img src="./src/publicidad5.webp" class="d-block w-100" alt="Publicidad 5">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+    </a>
+</div>
+
+
+<!-- Encabezado -->
+<header class="text-center my-5">
+    <h1>Explora Nuestros Restaurantes</h1>
+    <p>Descubre una variedad de deliciosas opciones</p>
+</header>
+ <!-- Sección de Portada -->
+ <section class="portada">
+    <div class="container">
+        <h1>Bienvenido a Comer en Cochabamba</h1>
+        <p>Explora la deliciosa gastronomía de Cochabamba y descubre recetas, restaurantes y eventos culinarios
+            locales.</p>
+    </div>
+</section>
+<!-- Sección de restaurantes -->
+<section class="restaurantes">
+    <div class="container">
+        <h2>Nuestros Restaurantes</h2>
+        <div class="row">
+            <!-- Restaurante 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./src/restaurante1.webp" class="card-img-top" alt="Restaurante 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Restaurante 1</h5>
+                        <p class="card-text">Cocina internacional</p>
+                        <a href="restaurantes.html" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Restaurante 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./src/restaurante2.jpeg" class="card-img-top" alt="Restaurante 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Restaurante 2</h5>
+                        <p class="card-text">Comida mexicana</p>
+                        <a href="restaurantes.html" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Restaurante 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./src/restaurante3.jpeg" class="card-img-top" alt="Restaurante 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Restaurante 3</h5>
+                        <p class="card-text">Pizza y pasta</p>
+                        <a href="restaurantes.html" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center mt-4">
+                        <a href="restaurantes.html" class="btn btn-primary">Ver Mas</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite el bloque anterior para los otros restaurantes -->
+        </div>
+    </div>
+</section>
+<!-- Sección de Categorías Destacadas -->
+<section class="categorias-destacadas">
+    <div class="container">
+        <h2>Categorías Destacadas</h2>
+        <div class="row">
+            <div class="col-md-4 categoria">
+                <img src="./src/cochabamba.jpg" alt="Categoría 1" style="height: 150px;">
+                <h3>Recetas Cochabambinas</h3>
+            </div>
+            <div class="col-md-4 categoria">
+                <img src="./src/local.png" alt="Categoría 2" style="height: 150px;">
+                <h3>Restaurantes Locales</h3>
+            </div>
+            <div class="col-md-4 categoria">
+                <img src="./src/andino.jpg" alt="Categoría 3" style="height: 150px;">
+                <h3>Ingredientes Andinos</h3>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light text-center py-3">
+    <p>&copy; 2023 Tu Comer en Cochabamba. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Incluye los archivos JavaScript de Bootstrap y jQuery (Requeridos para animaciones y el carrusel) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

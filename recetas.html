@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comer en Cocha</title>
+    <link rel="icon" href="./src/Logo2.png" type="image/x-icon">
+
+    <!-- Incluye los archivos CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- Estilo personalizado para las tarjetas -->
+    <style>
+        .navbar {
+            background-color: #ffffff;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000000;
+            /* Texto blanco para el logo */
+        }
+
+        .navbar-logo img {
+            width: 80px;
+            /* Tamaño del logo */
+            margin-right: 10px;
+        }
+
+        .navbar-menu {
+            color: #000000;
+            /* Color del texto del menú */
+        }
+
+        .navbar-menu .nav-item {
+            margin: 0 10px;
+            /* Espaciado entre elementos del menú */
+        }
+
+        .navbar-menu .nav-link {
+            color: #000000;
+            /* Color del texto del menú */
+        }
+
+        /* Mover elementos del menú al lado derecho */
+        .navbar-menu {
+            justify-content: flex-end;
+        }
+        /* Botones de color amarillo */
+        .btn-primary {
+            background-color: #000;
+            border-color: #000;
+            color: rgb(255, 255, 255); /* Texto en negro en estado neutral */
+        }
+
+        .btn-primary:hover {
+            background-color: yellow;
+            border-color: yellow;
+            color: black; /* Texto en negro en estado de hover */
+        }
+
+        .card {
+            transition: transform 0.2s, box-shadow 0.3s;
+            border-color: #000;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-color: var(--secondary-color);
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+        }
+
+        .card-text {
+            font-size: 1rem;
+        }
+
+        /* Footer con color de fondo */
+        .footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+     /* Estilo para las imágenes en estado normal */
+     .categoria img {
+        height: 150px;
+        transition: transform 0.2s; /* Agrega una transición suave al efecto de transformación */
+    }
+
+    /* Estilo para las imágenes en estado hover */
+    .categoria img:hover {
+        transform: scale(1.1); /* Escala la imagen un 10% más grande en el estado hover */
+    }
+    .card {
+        transition: transform 0.2s, box-shadow 0.3s;
+    }
+/* Footer con color de fondo */
+.footer {
+background-color: #000;
+color: #fff;
+text-align: center;
+padding: 20px 0;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    </style>
+</head>
+<body>
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+        <div class="navbar-logo">
+            <img src="./src/Logo.png" alt="Logo" > Comer en Cocha
+        </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="recetas.html">Recetas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="restaurantes.html">Restaurantes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Eventos</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Contenedor de recetas -->
+    <div class="container mt-5">
+        <h1 class="text-center">Recetas deliciosas</h1>
+        <div class="row">
+            <!-- Receta 1: Lasagna -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./src/lasagna.jpeg" class="card-img-top" alt="Lasagna">
+                    <div class="card-body">
+                        <h5 class="card-title">Lasagna</h5>
+                        <p class="card-text">Una deliciosa receta de Lasagna con carne, pasta y salsa de tomate. Perfecta para 4 personas.</p>
+                        <h6>Ingredientes:</h6>
+                        <ul>
+                            <li>500g de carne molida de res</li>
+                            <li>1 caja de láminas de lasagna</li>
+                            <li>2 tazas de salsa de tomate</li>
+                            <li>1 taza de queso mozzarella rallado</li>
+                            <li>1/2 taza de queso parmesano rallado</li>
+                            <!-- Agrega más ingredientes aquí -->
+                        </ul>
+                        <a href="#" class="btn btn-primary">Ver Receta</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Receta 2: Sopa de Tomates -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./src/sopa.jpeg" class="card-img-top" alt="Sopa de Tomates">
+                    <div class="card-body">
+                        <h5 class="card-title">Sopa de Tomates</h5>
+                        <p class="card-text">Una receta reconfortante de Sopa de Tomates con crutones crujientes. Rinde para 6 porciones.</p>
+                        <h6>Ingredientes:</h6>
+                        <ul>
+                            <li>1 kg de tomates maduros</li>
+                            <li>1 cebolla picada</li>
+                            <li>2 dientes de ajo picados</li>
+                            <li>1 litro de caldo de pollo</li>
+                            <li>1 taza de crutones</li>
+                            <!-- Agrega más ingredientes aquí -->
+                        </ul>
+                        <a href="#" class="btn btn-primary">Ver Receta</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Receta 3: Comida Española -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./src/paella.jpeg" class="card-img-top" alt="Comida Española">
+                    <div class="card-body">
+                        <h5 class="card-title">Comida Española</h5>
+                        <p class="card-text">Una auténtica receta de la comida española con tapas y paella. Sirve a 6 personas.</p>
+                        <h6>Ingredientes:</h6>
+                        <ul>
+                            <li>300g de jamón serrano</li>
+                            <li>200g de aceitunas verdes y negras</li>
+                            <li>300g de arroz</li>
+                            <li>1 pimiento rojo</li>
+                            <li>1 cebolla</li>
+                            <!-- Agrega más ingredientes aquí -->
+                        </ul>
+                        <a href="#" class="btn btn-primary">Ver Receta</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Receta 1: Lasagna -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./src/lasagna.jpeg" class="card-img-top" alt="Lasagna">
+                    <div class="card-body">
+                        <h5 class="card-title">Lasagna</h5>
+                        <p class="card-text">Una deliciosa receta de Lasagna con carne, pasta y salsa de tomate. Perfecta para 4 personas.</p>
+                        <h6>Ingredientes:</h6>
+                        <ul>
+                            <li>500g de carne molida de res</li>
+                            <li>1 caja de láminas de lasagna</li>
+                            <li>2 tazas de salsa de tomate</li>
+                            <li>1 taza de queso mozzarella rallado</li>
+                            <li>1/2 taza de queso parmesano rallado</li>
+                            <!-- Agrega más ingredientes aquí -->
+                        </ul>
+                        <a href="#" class="btn btn-primary">Ver Receta</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Receta 2: Sopa de Tomates -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./src/sopa.jpeg" class="card-img-top" alt="Sopa de Tomates">
+                    <div class="card-body">
+                        <h5 class="card-title">Sopa de Tomates</h5>
+                        <p class="card-text">Una receta reconfortante de Sopa de Tomates con crutones crujientes. Rinde para 6 porciones.</p>
+                        <h6>Ingredientes:</h6>
+                        <ul>
+                            <li>1 kg de tomates maduros</li>
+                            <li>1 cebolla picada</li>
+                            <li>2 dientes de ajo picados</li>
+                            <li>1 litro de caldo de pollo</li>
+                            <li>1 taza de crutones</li>
+                            <!-- Agrega más ingredientes aquí -->
+                        </ul>
+                        <a href="#" class="btn btn-primary">Ver Receta</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Receta 3: Comida Española -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./src/paella.jpeg" class="card-img-top" alt="Comida Española">
+                    <div class="card-body">
+                        <h5 class="card-title">Comida Española</h5>
+                        <p class="card-text">Una auténtica receta de la comida española con tapas y paella. Sirve a 6 personas.</p>
+                        <h6>Ingredientes:</h6>
+                        <ul>
+                            <li>300g de jamón serrano</li>
+                            <li>200g de aceitunas verdes y negras</li>
+                            <li>300g de arroz</li>
+                            <li>1 pimiento rojo</li>
+                            <li>1 cebolla</li>
+                            <!-- Agrega más ingredientes aquí -->
+                        </ul>
+                        <a href="#" class="btn btn-primary">Ver Receta</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Agrega más recetas aquí -->
+        </div>
+    </div>
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2023 Tu Comer en Cochabamba. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Incluye los archivos JavaScript de Bootstrap y jQuery (Requeridos para animaciones y otros componentes) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+<!-- Footer -->
+
+</html>
